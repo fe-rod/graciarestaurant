@@ -2,11 +2,30 @@
     ViewData["Title"] = "Gràcia Restaurant";
 }
 
-<div class="col-xs-3"></div>
-<div class="col-xs-6">
-    <img src="~/images/gracia_logo_circle.png" class="img-responsive center-block logo" width="70%" alt="Gracia Restaurant" />
-</div>
-<div class="col-xs-3"></div>
+    @Html.Partial("_Header")
+
+    <main role="main">
+
+      <!-- @Html.Partial("_Carrousel") -->
+
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        @Html.Partial("_Features")
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      @Html.Partial("_Footer")
+    </main>
 
 @section Scripts {
     <script>
